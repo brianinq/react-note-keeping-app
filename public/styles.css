@@ -7,19 +7,18 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
-  padding: 0 16px;
+  background: #dbdce1;
+  background-image: url("./food.png");
 }
 
 header {
-  background-color: #f54611;
-  margin: auto -16px;
+  background-color: #fa7026;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-  color: rgb(0, 43, 63);
+  color: #002b3f;
   font-family: "McLaren", cursive;
   font-weight: 200;
 }
@@ -33,7 +32,7 @@ footer {
 }
 
 footer p {
-  color: #ccc;
+  color: #444;
 }
 .note {
   background: #fff;
@@ -58,16 +57,18 @@ footer p {
 .note button {
   position: relative;
   float: right;
-  margin-right: 10px;
-  margin-top: 10px;
-  color: #f54611;
+  width: 36px;
+  height: 36px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #fa7026;
   background: #fff;
   border: none;
   cursor: pointer;
   outline: none;
 }
 
-form {
+form.create-note {
   position: relative;
   width: 30rem;
   margin: 1.9rem auto 1.4rem auto;
@@ -76,8 +77,8 @@ form {
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-form input,
-form textarea {
+form.create-note input,
+form.create-note textarea {
   width: 100%;
   border: none;
   padding: 4px;
@@ -86,11 +87,11 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
-form button {
+form.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #f54611;
+  background: #fa7026;
   color: #fff;
   border: none;
   border-radius: 50%;
